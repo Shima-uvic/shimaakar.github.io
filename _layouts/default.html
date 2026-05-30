@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="site-title">
+        <a href="/">Shima Akar</a>
+      </div>
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="/education.html">Education</a>
+        <a href="/experience.html">Work Experience</a>
+        <a href="/skills.html">Skills</a>
+        <a href="/publications.html">Publications</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© 2026 Shima Akar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
