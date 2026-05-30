@@ -1,7 +1,4 @@
 title: Shima Akar
-description: PhD Candidate | Biomedical and Mechanical Engineering
-theme: jekyll-theme-minimal
-
-logo: assets/images/photo.jpg
-
-show_downloads: false
+description: Personal academic website
+baseurl: ""
+url: "https://yourusername.github.io"
