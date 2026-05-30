@@ -4,36 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
 
-  <header class="site-header">
-    <div class="nav-container">
-      <div class="site-title">
-        <a href="/">Shima Akar</a>
-      </div>
-
-      <nav>
-        <a href="/">Home</a>
-        <a href="/education.html">Education</a>
-        <a href="/experience.html">Work Experience</a>
-        <a href="/skills.html">Skills</a>
-        <a href="/publications.html">Publications</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
+<header class="site-header">
+  <div class="nav-container">
+    <div class="site-title">
+      <a href="{{ '/' | relative_url }}">Shima Akar</a>
     </div>
-  </header>
 
-  <main>
-    {{ content }}
-  </main>
+    <nav class="nav-menu">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/education.html' | relative_url }}">Education</a>
+      <a href="{{ '/experience.html' | relative_url }}">Work Experience</a>
+      <a href="{{ '/skills.html' | relative_url }}">Skills</a>
+      <a href="{{ '/publications.html' | relative_url }}">Publications</a>
+      <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <footer>
-    <p>© 2026 Shima Akar. All rights reserved.</p>
-  </footer>
+<main class="main-content">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Shima Akar. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
