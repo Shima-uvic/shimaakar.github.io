@@ -2,20 +2,20 @@ body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
   color: #333;
-  background-color: #ffffff;
+  background: #ffffff;
   line-height: 1.7;
 }
 
 .site-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .nav-container {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: auto;
   padding: 18px 25px;
   display: flex;
@@ -31,41 +31,41 @@ body {
   text-decoration: none;
 }
 
-nav a {
-  margin-left: 20px;
+.nav-menu a {
+  margin-left: 18px;
   color: #333;
   text-decoration: none;
   font-weight: 500;
 }
 
-nav a:hover {
+.nav-menu a:hover {
   color: #004aad;
 }
 
-main {
-  max-width: 1100px;
+.main-content {
+  max-width: 1150px;
   margin: auto;
-  padding: 40px 25px;
+  padding: 45px 25px;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 40px;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 45px;
   align-items: center;
-  min-height: 70vh;
+  min-height: 65vh;
 }
 
 .hero h1 {
-  font-size: 2.7rem;
+  font-size: 2.8rem;
   color: #004aad;
   margin-bottom: 10px;
 }
 
 .hero h2 {
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.35rem;
   color: #555;
+  font-weight: 500;
 }
 
 .hero p {
@@ -86,30 +86,30 @@ main {
 
 .button {
   display: inline-block;
-  background-color: #004aad;
+  background: #004aad;
   color: white;
   padding: 11px 20px;
-  margin-right: 10px;
+  margin: 6px 8px 6px 0;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
 }
 
 .button.secondary {
-  background-color: #f0f4ff;
+  background: #eef3ff;
   color: #004aad;
 }
 
 .page-title {
   color: #004aad;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   border-bottom: 2px solid #004aad;
   padding-bottom: 8px;
   margin-bottom: 30px;
 }
 
 .card {
-  background-color: #f8f9fb;
+  background: #f8f9fb;
   padding: 25px;
   border-radius: 10px;
   margin-bottom: 25px;
@@ -128,15 +128,15 @@ main {
 }
 
 .project-card {
-  background-color: #f8f9fb;
+  background: #f8f9fb;
+  border: 1px solid #e3e3e3;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #e2e2e2;
 }
 
 .project-card img {
   width: 100%;
-  height: 220px;
+  height: 230px;
   object-fit: cover;
 }
 
@@ -149,35 +149,35 @@ main {
   margin-top: 0;
 }
 
-iframe {
+.video-container iframe {
   width: 100%;
-  max-width: 720px;
-  height: 405px;
+  max-width: 760px;
+  height: 420px;
   border-radius: 10px;
   margin-top: 20px;
 }
 
-footer {
+.site-footer {
   text-align: center;
-  background-color: #004aad;
+  background: #004aad;
   color: white;
   padding: 25px;
   margin-top: 60px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  nav {
-    margin-top: 15px;
+  .nav-menu {
+    margin-top: 12px;
   }
 
-  nav a {
+  .nav-menu a {
     display: inline-block;
-    margin: 8px;
+    margin: 7px;
   }
 
   .profile-photo {
