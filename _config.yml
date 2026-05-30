@@ -1,4 +1,6 @@
 title: Shima Akar
 description: Personal academic website
-baseurl: ""
-url: "https://yourusername.github.io"
+baseurl: "/shimaakar.github.io"
+url: "https://shima-uvic.github.io"
+
+markdown: kramdown
